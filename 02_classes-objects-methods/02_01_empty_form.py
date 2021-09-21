@@ -10,3 +10,16 @@
 #
 # Model such an application form as a Python class below, and instantiate
 # a few objects from it.
+class Ingredient:
+
+    """Models a food item used as an ingredient."""
+    def __init__(self, name, amount):
+        self.name = name
+        self.amount = amount
+
+    # -- snip --
+
+    def __add__(self, other):
+        """Combines two ingredients."""
+        new_name = self.name + other.name
+        return Ingredient(name=new_name, amount=1)
