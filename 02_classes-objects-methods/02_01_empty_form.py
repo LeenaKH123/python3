@@ -10,9 +10,17 @@
 #
 # Model such an application form as a Python class below, and instantiate
 # a few objects from it.
-class Ingredient:
-    pass
+class PatientForm:
+    def __init__(self, id, name):
+        self.name = name
+        self.id = id
 
-i = Ingredient()
-i.name = "carrot"
-print(name)
+    def __str__(self):
+        return f"{self.id}, {self.name}"
+
+
+patient1 = PatientForm("12", "Chris")
+patient2 = PatientForm("13", "Mike")
+
+print(patient1)
+print(patient2)
