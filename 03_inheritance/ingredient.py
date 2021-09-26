@@ -1,6 +1,5 @@
 class Ingredient:
     """Models an Ingredient."""
-
     def __init__(self, name, amount):
         self.name = name
         self.amount = amount
@@ -12,7 +11,6 @@ class Ingredient:
 
     def __str__(self):
         return f"You have {self.amount} {self.name}."
-
 
 class Spice(Ingredient):
     """Models a spice to flavor your food."""
@@ -27,8 +25,6 @@ class Spice(Ingredient):
 
     def grind(self):
         print(f"You have now {self.amount} of ground {self.name}.")
-
-
 c = Ingredient("carrots", 2)
 p = Spice("pepper", 2, "hot")
 p.expire()
