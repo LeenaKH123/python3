@@ -13,17 +13,23 @@ class Ingredient:
     def __str__(self):
         return f"You have {self.amount} {self.name}."
 
+
 class Spice(Ingredient):
     """Models a spice to flavor your food."""
-    def grind(self):
-        print(f"You have now {self.amount} of ground {self.name}.")
+
+    def __init__(self, name, amount, taste):
+        super().__init__(name, amount)
+        self.taste = taste
+
     def expire(self):
         print(f"your {self.name} has expired. it's probably still good.")
         self.name = "old " + self.name
 
-c = Ingredient('carrots', 3)
-p = Spice('pepper', 20)
+    def grind(self):
+        print(f"You have now {self.amount} of ground {self.name}.")
 
-p.grind()  # OUTPUT: You have now 20 of ground pepper.
-c.grind()  # OUTPUT: AttributeError: 'Ingredient' object has no attribute 'grind'
-   
+
+c = Ingredient("carrots", 2)
+p = Spice("pepper", 2, "hot")
+p.expire()
+print(c, p)
