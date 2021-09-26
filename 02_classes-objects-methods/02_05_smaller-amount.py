@@ -24,6 +24,9 @@ class Ingredient:
     def __add__(self, other):
         """Combines two ingredients."""
         new_name = self.name + other.name
+        # amount1 = self.amount
+        # amount2 = other.amount
+
         return Ingredient(name=new_name, amount=1)
     
     def __str__(self):
