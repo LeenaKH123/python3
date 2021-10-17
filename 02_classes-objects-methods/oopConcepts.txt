@@ -1,0 +1,14 @@
+1. ) Abstraction : create a black box when writing your code, users dont need to know about all the details of the implementation
+python's base unit of abstraction is the class.
+
+2. ) Encapsulation: bind the data and the code that changes it together, to keep the data safe from unintentional changes.
+exposing public interface and hiding everything else in a private interface.
+
+3. ) Inheritance: allows an object to access the properties of its parent object.
+
+
+4. ) Polymorphism:  gives the possibility for different classes to implement the same attributes and methods, but handle their logic differently. 
+
+
+
+
