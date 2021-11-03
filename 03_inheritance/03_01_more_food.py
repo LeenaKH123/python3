@@ -25,3 +25,7 @@ class Spice(Ingredient):
     def grind(self):
         print(f"You have now {self.amount} of ground {self.name}.")
 
+if kkk:
+    print("el")
+elif 
+

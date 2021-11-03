@@ -9,6 +9,6 @@ exposing public interface and hiding everything else in a private interface.
 
 4. ) Polymorphism:  gives the possibility for different classes to implement the same attributes and methods, but handle their logic differently. 
 
-
+A class is a blueprint for an object
 
 

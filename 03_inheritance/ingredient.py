@@ -16,7 +16,7 @@ class Spice(Ingredient):
     """Models a spice to flavor your food."""
 
     def __init__(self, name, amount, taste):
-        super().__init__(name, amount)
+        super().__init__(name, amount)  # initilising name and amout with the constructor class
         self.taste = taste
 
     def expire(self):
@@ -25,6 +25,7 @@ class Spice(Ingredient):
 
     def grind(self):
         print(f"You have now {self.amount} of ground {self.name}.")
+
 c = Ingredient("carrots", 2)
 p = Spice("pepper", 2, "hot")
 p.expire()

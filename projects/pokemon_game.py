@@ -11,3 +11,20 @@
 # - Display messages that explain who won or lost a battle
 # - If a Pokemon loses a battle, they lose some of their `hp`
 # - If you call the `feed()` method on a Pokemon, they regain some `hp`
+#---------------My notes ------------
+# create a pokemon
+# take a look at it
+# feed them to improve their health
+# make them battle and decide for a winner
+
+
+class Pokemon:
+    def __init__(self, name, primary_type, max_hp, hp)
+    self.name = name
+    self.primary_type = primary_type # how to define primary type??
+    self.max_hp = max_hp
+    self.hp = hp
+
+    def battle():
+        if primary_type == 
+
